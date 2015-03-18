@@ -14,7 +14,8 @@ block content
         each item in survey
           tr
             td
-              img(src=item.image_url, width="100")
+              a(href='/survey/list/' + item.id)
+                img(src=item.image_url, width="100")
             td= item.profile_owner_id
             td= item.likes
             td= item.caption_time

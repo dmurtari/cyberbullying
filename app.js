@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 // load routes for note, account, context
 require('./routes/about')(app)
 require('./routes/surveyList')(app)
-// require('./routes/surveyQuestion')(app)
+require('./routes/surveyQuestion')(app)
 
 app.set('port', (process.env.PORT || 3000))
 
