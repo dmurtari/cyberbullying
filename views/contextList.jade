@@ -1,0 +1,11 @@
+extends layout.jade
+
+block content
+    each site,name in contexts
+        h3=name
+        each item in site
+            h4=contexts.name
+            div.row
+                div.eight.columns
+                    a(href='/context/view/' + item.id)
+                        = item.title

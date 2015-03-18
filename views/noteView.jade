@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    h1= note.content
+    div.row
+        div.six.columns
+            each m in note.medias
+                - // compute a url to an automatically resized image (by Cloudinary)
+                - var url = m.link.replace('upload/','upload/w_500,c_fit/')
+                img(src=url, width="500")
+        div.six.columns
+            - var date = new Date(note.created_at)
+            - var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            - var mapurl = 'http://maps.google.com/?q=' + note.latitude  + ',' + note.longitude
+
+            strong
+                =note.account.name + " (" + note.account.username + ")"
+                image(src=note.account.icon_url, height="40", align="right")
+            p= "Posted: " + months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()
+            
+            strong= "Location of Photograph"
+            p= note.context.site.description + ": "
+                a(href=mapurl)= note.latitude + ", " + note.longitude
+            
+            p= note.context.description
+
+    h3= "Feedback about this note"
+    each feedback in note.feedbacks
+        if feedback.kind === "comment"
+            strong= feedback.account.name + ":"
+            p= feedback.content

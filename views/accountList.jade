@@ -1,0 +1,31 @@
+extends layout.jade
+
+block content
+	div.row
+		div.one.column
+			h5 ID
+		div.three.columns
+			h5 Username
+		div.three.columns
+			h5 Email
+		div.three.columns
+			h5 Name
+	each item in accounts
+		div.row
+			div.one.column
+				= item.id
+			div.three.columns      
+				a(href='/account/view/' + item.id)
+					= item.username
+			div.three.columns
+				if item.email == null
+					| No Email
+				else
+					= item.email
+			div.three.columns
+				if item.name == null
+					| No Name
+				else
+					= item.name
+			
+			

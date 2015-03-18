@@ -1,0 +1,646 @@
+{
+  "data": [
+    {
+      "_model_": "Context",
+      "description": "Take a picture of trees you see and leave a note about it.",
+      "extras": "",
+      "id": 1,
+      "kind": "Pilot",
+      "name": "cu_tree",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Trees"
+    },
+    {
+      "_model_": "Context",
+      "description": "Take a picture of buildings you find interesting and leave a note about it.",
+      "extras": "",
+      "id": 2,
+      "kind": "Pilot",
+      "name": "cu_building",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Buildings"
+    },
+    {
+      "_model_": "Context",
+      "description": "Pilot data from 2013",
+      "extras": "",
+      "id": 3,
+      "kind": "Pilot",
+      "name": "aces_pilot",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Pilot"
+    },
+    {
+      "_model_": "Context",
+      "description": "Contribute a design ideat to make NatureNet better",
+      "extras": "",
+      "id": 4,
+      "kind": "Design",
+      "name": "cu_design_idea",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Design Idea"
+    },
+    {
+      "_model_": "Context",
+      "description": "Contribute a design ideat to make NatureNet better",
+      "extras": "",
+      "id": 5,
+      "kind": "Design",
+      "name": "aces_design_idea",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Design Idea"
+    },
+    {
+      "_model_": "Context",
+      "description": "Contribute a design ideat to make NatureNet better",
+      "extras": "",
+      "id": 6,
+      "kind": "Design",
+      "name": "cu_design_idea",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "Design Idea"
+    },
+    {
+      "_model_": "Context",
+      "description": "Contribute a design ideat to make NatureNet better",
+      "extras": "",
+      "id": 7,
+      "kind": "Design",
+      "name": "uncc_design_idea",
+      "site": {
+        "_model_": "Site",
+        "description": "University of North Carolina at Charlotte",
+        "id": 3,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/uncc.jpg",
+        "name": "uncc"
+      },
+      "title": "Design Idea"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find an animal or plant that the NatureNet userbase won\u2019t be able to name!",
+      "extras": "",
+      "id": 11,
+      "kind": "Activity",
+      "name": "cu_stump",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Stump the Community"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find evidence of as many different kinds of bird or animal as you can!",
+      "extras": "",
+      "id": 12,
+      "kind": "Activity",
+      "name": "cu_tracks",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Tracks"
+    },
+    {
+      "_model_": "Context",
+      "description": "Photograph an animal or plant that you know either is or isn\u2019t indigenous to your region. If it\u2019s not, try to tell us where it\u2019s from!",
+      "extras": "",
+      "id": 13,
+      "kind": "Activity",
+      "name": "cu_native",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Native or Not?"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find an animal or plant that the NatureNet userbase won\u2019t be able to name!",
+      "extras": "",
+      "id": 14,
+      "kind": "Activity",
+      "name": "umd_stump",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "Stump the Community"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find evidence of as many different kinds of bird or animal as you can!",
+      "extras": "",
+      "id": 15,
+      "kind": "Activity",
+      "name": "umd_tracks",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "Tracks"
+    },
+    {
+      "_model_": "Context",
+      "description": "Photograph an animal or plant that you know either is or isn\u2019t indigenous to your region. If it\u2019s not, try to tell us where it\u2019s from!",
+      "extras": "",
+      "id": 16,
+      "kind": "Activity",
+      "name": "umd_native",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "Native or Not?"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find an animal or plant that the NatureNet userbase won\u2019t be able to name!",
+      "extras": "",
+      "id": 17,
+      "kind": "Activity",
+      "name": "uncc_stump",
+      "site": {
+        "_model_": "Site",
+        "description": "University of North Carolina at Charlotte",
+        "id": 3,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/uncc.jpg",
+        "name": "uncc"
+      },
+      "title": "Stump the Community"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find evidence of as many different kinds of bird or animal as you can!",
+      "extras": "",
+      "id": 18,
+      "kind": "Activity",
+      "name": "uncc_tracks",
+      "site": {
+        "_model_": "Site",
+        "description": "University of North Carolina at Charlotte",
+        "id": 3,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/uncc.jpg",
+        "name": "uncc"
+      },
+      "title": "Tracks"
+    },
+    {
+      "_model_": "Context",
+      "description": "Photograph an animal or plant that you know either is or isn\u2019t indigenous to your region. If it\u2019s not, try to tell us where it\u2019s from!",
+      "extras": "",
+      "id": 19,
+      "kind": "Activity",
+      "name": "uncc_native",
+      "site": {
+        "_model_": "Site",
+        "description": "University of North Carolina at Charlotte",
+        "id": 3,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/uncc.jpg",
+        "name": "uncc"
+      },
+      "title": "Native or Not?"
+    },
+    {
+      "_model_": "Context",
+      "description": "Photograph an animal or plant that you know either is or isn\u2019t indigenous to your region. If it\u2019s not, try to tell us where it\u2019s from!",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1417643007/deer5_apf32e.png",
+      "id": 10,
+      "kind": "Activity",
+      "name": "aces_native",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Native or Not?"
+    },
+    {
+      "_model_": "Context",
+      "description": "Beavers have been living here at Hallam Lake for many decades. They are most active at dawn and dusk. Do you see any signs of their activity? Chewed sticks, pointed tree stumps, dams, and lodges are all clues that beavers live nearby. The beavers here live in a bank lodge located on the other side of the lake, under the leaning blue spruce tree.",
+      "extras": "{'latitude': 39.1947318, 'longitude': -106.8227492}",
+      "id": 23,
+      "kind": "Landmark",
+      "name": "aces_landmark4",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "4. Beavers: Builders of Community Space"
+    },
+    {
+      "_model_": "Context",
+      "description": "Do you have a question about a plant or animal that you see? Take a photo and/or ask your question here and an ACES naturalist will be in touch with you later by e-mail.",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1416516641/question_omtngw.png",
+      "id": 8,
+      "kind": "Activity",
+      "name": "aces_stump",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Ask a Naturalist"
+    },
+    {
+      "_model_": "Context",
+      "description": "It's time to meet ACES' resident Golden Eagle, a real Aspen local. In the summer of 1982 this eagle was found on the backside of Aspen Mountain by hikers.  She was brought to a raptor rehabilitation center in Fort Collins, where she was treated for a broken right wing and left leg. She was then returned to Aspen and Hallam Lake where she has lived ever since.",
+      "extras": "{'latitude': 39.1949047, 'longitude': -106.8211742}",
+      "id": 21,
+      "kind": "Landmark",
+      "name": "aces_landmark2",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "2. Golden Eagle"
+    },
+    {
+      "_model_": "Context",
+      "description": "Turn left for an out-and-back to the marsh platform.",
+      "extras": "{'latitude': 39.1955728, 'longitude': -106.82199554}",
+      "id": 26,
+      "kind": "Landmark",
+      "name": "aces_landmark7",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "7. Overlook the Sanctuary"
+    },
+    {
+      "_model_": "Context",
+      "description": "Human Computer Interaction Laboratory",
+      "extras": "{'latitude': 39.987901, 'longitude': -76.941599}",
+      "id": 31,
+      "kind": "Landmark",
+      "name": "umd_landmark_hcil",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "HCIL"
+    },
+    {
+      "_model_": "Context",
+      "description": "AV Williams, Computer Science, UMIACS",
+      "extras": "{'latitude': 38.990752, 'longitude': -76.936271}",
+      "id": 32,
+      "kind": "Landmark",
+      "name": "umd_landmark_avw",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "AV Williams"
+    },
+    {
+      "_model_": "Context",
+      "description": "McKeldin Mall",
+      "extras": "{'latitude': 38.987134, 'longitude': -76.9403059}",
+      "id": 33,
+      "kind": "Landmark",
+      "name": "umd_landmark_mall",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Maryland College Park",
+        "id": 5,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/umd.jpg",
+        "name": "umd"
+      },
+      "title": "McKeldin Mall"
+    },
+    {
+      "_model_": "Context",
+      "description": "Woodward Hall",
+      "extras": "{'latitude': 35.3072387, 'longitude': -80.7353323}",
+      "id": 34,
+      "kind": "Landmark",
+      "name": "uncc_landmark_woodward",
+      "site": {
+        "_model_": "Site",
+        "description": "University of North Carolina at Charlotte",
+        "id": 3,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/uncc.jpg",
+        "name": "uncc"
+      },
+      "title": "Woordward Hall"
+    },
+    {
+      "_model_": "Context",
+      "description": "DLC",
+      "extras": "{'latitude': 40.007614, 'longitude': -105.261771}",
+      "id": 35,
+      "kind": "Landmark",
+      "name": "cu_landmark_dlc",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Discovery Learning Center"
+    },
+    {
+      "_model_": "Context",
+      "description": "C4C - Center for Community",
+      "extras": "{'latitude': 40.004443, 'longitude': -105.26484}",
+      "id": 36,
+      "kind": "Landmark",
+      "name": "cu_landmark_c4c",
+      "site": {
+        "_model_": "Site",
+        "description": "University of Colorado Boulder",
+        "id": 4,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/cu.jpg",
+        "name": "cu"
+      },
+      "title": "Center for Community"
+    },
+    {
+      "_model_": "Context",
+      "description": null,
+      "extras": null,
+      "id": 37,
+      "kind": "Landmark",
+      "name": "aces_landmark0",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Other"
+    },
+    {
+      "_model_": "Context",
+      "description": "Observations made without having a specific activity",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1416516641/binoculars5_oz4hie.png",
+      "id": 38,
+      "kind": "Activity",
+      "name": "aces_Free Observation",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Free Observation"
+    },
+    {
+      "_model_": "Context",
+      "description": "Find evidence of as many different kinds of bird or animal as you can!",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1416516641/activity_3_e8casv.png",
+      "id": 9,
+      "kind": "Activity",
+      "name": "aces_tracks",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Tracks"
+    },
+    {
+      "_model_": "Context",
+      "description": "Here in the Rocky Mountains, and especially in Aspen, snowfall is very important. ACES does its best to observe snow accumulation and melt in an effort to better understand our local climate. You can contribute to our study by taking a picture of the measuring stick and recording the temperature.",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1416516642/snowflake-128_hlaspi.png",
+      "id": 39,
+      "kind": "Activity",
+      "name": "aces_Snow Study",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Snow Study"
+    },
+    {
+      "_model_": "Context",
+      "description": "Here at ACES we are very interested in how our ecological landscape changes over time. To participate in our study, simply take a picture of Red Mountain from the designated position. Observations like yours will help ACES monitor foliage cover and snowfall on the mountain.",
+      "extras": "http://res.cloudinary.com/university-of-colorado/image/upload/v1417642699/mountain_black_a4f0zs.png",
+      "id": 40,
+      "kind": "Activity",
+      "name": "aces_Red Mountain",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "Red Mountain"
+    },
+    {
+      "_model_": "Context",
+      "description": "Natural springs feed Hallam Lake throughout the year, creating a hub of animal and plant activity. These springs have always served as a gathering place for people and wildlife. Ute Indians believed that springs were sacred places. They would camp near areas like Hallam Lake when they followed game into the mountains during the summer.",
+      "extras": "{'latitude': 39.1948828, 'longitude': -106.8210015}",
+      "id": 20,
+      "kind": "Landmark",
+      "name": "aces_landmark1",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "1. Hub of Activities"
+    },
+    {
+      "_model_": "Context",
+      "description": "Take a seat and enjoy the view! The bench here offers us a place of refuge from the sun, rain, or snow, just as the lake offers refuge to a plethora of waterfowl. Geese and ducks return to Hallam Lake every year as the lake provides a safe stepping-stone on the journey of migration. It is a place to rest, relax, recharge, and connect with other travelers. Why do these birds stop here? The lake is an ideal habitat and is full of food. Hallam Lake never completely freezes in winter due to its 48  F spring water source. This provides a consistent, open-water site all year long.  At Hallam Lake we mark the seasons by visits from the birds. We count on their arrival just as they count on the safe haven that Hallam Lake offers",
+      "extras": "{'latitude': 39.1948937, 'longitude': -106.8213286}",
+      "id": 22,
+      "kind": "Landmark",
+      "name": "aces_landmark3",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "3. A Safe Haven"
+    },
+    {
+      "_model_": "Context",
+      "description": "As you stand here at the teaching platforms, you are joining a long lineage of visitors who have found Hallam Lake a place of connection and inspiration. Since the very early days of ACES, children and adults have used this spot as an outdoor classroom and laboratory, a place of thoughtful observation and study to reconnect with nature. Artists and writers have used Hallam Lake as an outdoor studio, finding these platforms to be a wonderful spot to express themselves. If you have a camera, a journal, or watercolors, stop and get in touch with your inner artist!",
+      "extras": "{'latitude': 39.19550337, 'longitude': -106.8222594}",
+      "id": 24,
+      "kind": "Landmark",
+      "name": "aces_landmark5",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "5. Outdoor Classroom"
+    },
+    {
+      "_model_": "Context",
+      "description": "Look down and take notice of the strange plants growing next to the trail. The plants below are commonly known as horsetails and are a connection to an ancient part of plant history. Spore-producing horsetails belong to the genus Equisetum, in a plant family that is over 300 million years old!  They are also called scouring rushes because silica, stored in the plant's cells, makes them effective for scrubbing pots or polishing wood.  Native Americans used the horsetails as a blood coagulant, and more recent medical research has shown these plants to be an effective diuretic.  Can you think of other ancient plants or animals that are still living today?",
+      "extras": "{'latitude': 39.1956273, 'longitude': -106.82209508}",
+      "id": 25,
+      "kind": "Landmark",
+      "name": "aces_landmark6",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "6. Powerful Ties from Past to Present"
+    },
+    {
+      "_model_": "Context",
+      "description": "Birding is a great way to connect with wildlife near your home or any place you visit. Take a moment to peek inside Bird Hollow. During the winter, bird feeders are hung from the trees and many species of birds can be seen here. Chickadees, nuthatches, finches, and Steller's Jays all frequent this area looking for food. Bird diversity increases dramatically in the summer.",
+      "extras": "{'latitude': 39.19570224, 'longitude': -106.82187726}",
+      "id": 27,
+      "kind": "Landmark",
+      "name": "aces_landmark8",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "8. Bird Hollow"
+    },
+    {
+      "_model_": "Context",
+      "description": "The rushing water below is the Roaring Fork River just before it meets Hunter Creek. Hallam Lake can be geographically defined as the low, wet riparian area adjacent to the confluence of Hunter Creek and the Roaring Fork River.",
+      "extras": "{'latitude': 39.19629875, 'longitude': -106.82124016}",
+      "id": 28,
+      "kind": "Landmark",
+      "name": "aces_landmark9",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "9. Where Rivers Come Together"
+    },
+    {
+      "_model_": "Context",
+      "description": "You are standing in front of the Birds of Prey (BOP) House, the hub of our non-releasable raptor program. While at ACES, the resident BOP serve as our best educators, allowing visitors to get up close and personal to powerful wild animals.",
+      "extras": "{'latitude': 39.1949438, 'longitude': -106.8211348}",
+      "id": 29,
+      "kind": "Landmark",
+      "name": "aces_landmark10",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "10. Birds of Prey"
+    },
+    {
+      "_model_": "Context",
+      "description": "Thank you for visiting Hallam Lake today! This has always been a place of connection for animals and people, from the early times of the Ute Indians to the present-day visitors and guests of our nature center. Birds touch down on the lake and rest, and this is a safe haven for deer, black bears, and beavers to raise their young. Hallam Lake is an important hub for the Aspen community, offering a place for people to share stories and ideas, as well as find inspiration and peace. Nature centers in many communities provide a place where everyone is welcome regardless of race, religion, or financial status.",
+      "extras": "{'latitude': 39.1949643, 'longitude': -106.8209335}",
+      "id": 30,
+      "kind": "Landmark",
+      "name": "aces_landmark11",
+      "site": {
+        "_model_": "Site",
+        "description": "Aspen Center for Environmental Studies",
+        "id": 2,
+        "image_url": "https://dl.dropboxusercontent.com/u/5104407/nntest/aces.jpg",
+        "name": "aces"
+      },
+      "title": "11. Journey's End"
+    }
+  ],
+  "status_code": 200,
+  "status_txt": "OK"
+}
