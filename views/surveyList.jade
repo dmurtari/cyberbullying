@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div(class="panel panel-default")
+    div.panel-heading
+      h3= "Images to rate"
+    div.panel-body
+      table(class="table table-striped")
+        tr
+          th= "Image"
+          th= "Owner"
+          th= "Likes"
+          th= "Time Posted"
+        each item in survey
+          tr
+            td
+              img(src=item.image_url, width="100")
+            td= item.profile_owner_id
+            td= item.likes
+            td= item.caption_time
