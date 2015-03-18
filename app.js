@@ -21,12 +21,8 @@ app.get('/', function(req, res) {
 })
 
 // load routes for note, account, context
-require('./routes/noteView')(app)
-require('./routes/noteList')(app)
-require('./routes/accountView')(app)
-require('./routes/accountList')(app)
-require('./routes/contextView')(app)
-require('./routes/contextList')(app)
+require('./routes/about')(app)
+
 
 
 app.set('port', (process.env.PORT || 3000))
