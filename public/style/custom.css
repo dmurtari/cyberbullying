@@ -1,3 +1,12 @@
 .paneldozer {
   margin: 5px;
 }
+
+.scrolldozer {
+  overflow: scroll;
+  height: 70%;
+}
+
+.scrollparent {
+  height: 1000px;
+}

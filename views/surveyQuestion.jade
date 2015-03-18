@@ -11,4 +11,8 @@ block content
       div.panel-heading
         h3= "Image and Comment to Rate"
       div.panel-body
-        img(src=post.image_url)
+        div.col-xs-8.col-md-8
+          img(src=post.image_url)
+        div.col-xs-4.col-md-4.scrolldozer
+          for comment in post.comments
+            p= comment.comment
