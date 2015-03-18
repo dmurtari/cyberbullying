@@ -1,4 +1,12 @@
 extends layout.jade
 
 block content
-    h1 Welcome
+  h1= "Welcome to the Cyberbullying Survey"
+  p= "Help study the impacts of cyberbulling by taking a survey"
+
+  div(class="btn-group btn-group-lg")
+    button(class="btn btn-default")
+      a(href="/about") Learn more
+    button(class="btn btn-default")
+      a(href="/survey/list") Take the Survey
+  br
