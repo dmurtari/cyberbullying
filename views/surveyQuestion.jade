@@ -1,2 +1,14 @@
 extends layout
 
+block content
+  div.row.center-block
+    div.alert.alert-info
+      strong Instructions: 
+      | Read each post.
+      | Answer the questions about the image and its posts, using the best of your ability
+  div.row.center-block
+    div(class="panel panel-default col-xs-12 col-md-12")
+      div.panel-heading
+        h3= "Image and Comment to Rate"
+      div.panel-body
+        img(src=post.image_url)
