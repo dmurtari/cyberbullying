@@ -33,9 +33,36 @@ block content
       div.col-xs-2.col-md-2.button-div
         if prev_id >= 0
           button.btn.btn-primary
-            a(href="/survey/list/" + prev_id) Previous
+            a.white-text(href="/survey/list/" + prev_id) Previous
       div.col-xs-1.col-md-1.col-xs-offset-9.col-xs-offset-9.button-div
         if next_id <= survey_length
           button.btn.btn-primary
-            a(href="/survey/list/" + next_id) Next
-
+            a.white-text(href="/survey/list/" + next_id) Next
+  div.row.center-block
+    div.panel.panel-default.col-xs-12.col-md-12
+      div.panel-heading
+        h3.panel-title
+          = "Survey questions"
+      div.panel-body
+        table.table.table-striped
+          tr
+            th= "Question"
+            th= "Yes"
+            th= "No"
+          - var question_number = 0
+          each question in questions
+            tr
+              td= question.question
+              td
+                input(type="radio" name="question" + question_number)
+              td
+                input(type="radio" name="question" + question_number)
+            - question_number += 1
+        div.col-xs-2.col-md-2.button-div
+          if prev_id >= 0
+            button.btn.btn-primary(type="submit")
+              a.white-text(href="/survey/list/" + prev_id) Previous
+        div.col-xs-1.col-md-1.col-xs-offset-9.col-xs-offset-9.button-div(type="submit")
+          if next_id <= survey_length
+            button.btn.btn-primary
+              a.white-text(href="/survey/list/" + next_id) Next
