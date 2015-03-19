@@ -5,17 +5,18 @@ block content
   - var prev_id = Number(post.id) - 1
   div.row.center-block
     div.alert.alert-info
-      strong Instructions:
+      strong Instructions: 
       | Read each post.
-      | Answer the questions about the image and its posts, using the best of your ability
+      | Answer the questions about the image and its posts, using the best of your ability. Clicking "Previous" or "Next" will save your answers
   div.row.center-block
     div(class="panel panel-default col-xs-12 col-md-12")
       div.panel-heading
-        h3= "Image and Comment to Rate"
+        h3= "Image and Comments to Rate"
       div.panel-body
         div.col-xs-7.col-md-7
           img(src=post.image_url)
           br
+          h5= "Owner Comment"
           strong
             = post.profile_owner_id + ": "
           = post.owner_caption
@@ -29,15 +30,7 @@ block content
                 strong
                   = comment.user_id + ": "
                 = comment.comment
-                br
-      div.col-xs-2.col-md-2.button-div
-        if prev_id >= 0
-          button.btn.btn-primary
-            a.white-text(href="/survey/list/" + prev_id) Previous
-      div.col-xs-1.col-md-1.col-xs-offset-9.col-xs-offset-9.button-div
-        if next_id <= survey_length
-          button.btn.btn-primary
-            a.white-text(href="/survey/list/" + next_id) Next
+                br        
   div.row.center-block
     div.panel.panel-default.col-xs-12.col-md-12
       div.panel-heading
@@ -58,11 +51,14 @@ block content
               td
                 input(type="radio" name="question" + question_number)
             - question_number += 1
-        div.col-xs-2.col-md-2.button-div
+        div.col-xs-1.col-md-1.button-div
           if prev_id >= 0
             button.btn.btn-primary(type="submit")
               a.white-text(href="/survey/list/" + prev_id) Previous
-        div.col-xs-1.col-md-1.col-xs-offset-9.col-xs-offset-9.button-div(type="submit")
+        div.col-xs-2.col-md-2.col-xs-offset-4.col-xs-offset-4.button-div(type="submit")
+          button.btn.btn-primary.btn-block(type="submit")
+            a.white-text(href="") Submit
+        div.col-xs-1.col-md-1.col-xs-offset-4.col-xs-offset-4.button-div(type="submit")
           if next_id <= survey_length
             button.btn.btn-primary
               a.white-text(href="/survey/list/" + next_id) Next
