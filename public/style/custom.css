@@ -3,10 +3,14 @@
 }
 
 .scrolldozer {
-  overflow: scroll;
-  height: 70%;
+    overflow: scroll;
+    height: 600px;
 }
 
 .scrollparent {
   height: 1000px;
+}
+
+.button-div {
+    padding-bottom: 20px;
 }

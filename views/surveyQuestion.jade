@@ -1,9 +1,11 @@
 extends layout
 
 block content
+  - var next_id = Number(post.id) + 1
+  - var prev_id = Number(post.id) - 1
   div.row.center-block
     div.alert.alert-info
-      strong Instructions: 
+      strong Instructions:
       | Read each post.
       | Answer the questions about the image and its posts, using the best of your ability
   div.row.center-block
@@ -11,8 +13,29 @@ block content
       div.panel-heading
         h3= "Image and Comment to Rate"
       div.panel-body
-        div.col-xs-8.col-md-8
+        div.col-xs-7.col-md-7
           img(src=post.image_url)
-        div.col-xs-4.col-md-4.scrolldozer
-          for comment in post.comments
-            p= comment.comment
+          br
+          strong
+            = post.profile_owner_id + ": "
+          = post.owner_caption
+        div.col-xs-5.col-md-5.panel
+          div.panel-heading
+            h3.panel-title
+              = "Comments"
+          div.panel-body
+            div.scrolldozer
+              for comment in post.comments
+                strong
+                  = comment.user_id + ": "
+                = comment.comment
+                br
+      div.col-xs-2.col-md-2.button-div
+        if prev_id >= 0
+          button.btn.btn-primary
+            a(href="/survey/list/" + prev_id) Previous
+      div.col-xs-1.col-md-1.col-xs-offset-9.col-xs-offset-9.button-div
+        if next_id <= survey_length
+          button.btn.btn-primary
+            a(href="/survey/list/" + next_id) Next
+
