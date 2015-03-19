@@ -7,6 +7,7 @@ var _ = require('lodash')
 app.data = {}
 app.data.survey = require('./data/cyberbullying_data.json').data
 app.data.results = require('./data/survey_results.json')
+app.data.questions = require('./data/survey_questions.json').data
 
 // use jade as the view engine
 app.set('view engine', 'jade')
