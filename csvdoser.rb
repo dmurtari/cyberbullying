@@ -1,7 +1,7 @@
 require 'csv'
 require 'json'
 
-csv_data = CSV.open('data/cyberbullying_data.csv', headers: true, :encoding => 'windows-1251:utf-8')
+csv_data = CSV.open('data/cyberbullying_data.csv', headers: true, encoding: "ISO8859-1")
 
 json_data = { data: [] }
 headers = []
