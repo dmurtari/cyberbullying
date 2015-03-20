@@ -42,15 +42,15 @@ block content
             th= "Question"
             th= "Yes"
             th= "No"
-          - var question_number = 0
+          - var question_number = 1
           each question in questions
             tr
               div(id="questions" + question_number)
                 td= question.question
                 td
-                  input(type="radio" name="question" + question_number id="question" + question_number value="yes")
+                  input(type="radio" name="question" + question_number id="question" + question_number value="true")
                 td
-                  input(type="radio" name="question" + question_number id="question" + question_number vaue="no")
+                  input(type="radio" name="question" + question_number id="question" + question_number value="false")
             - question_number += 1
         div.col-xs-1.col-md-1.button-div
           if prev_id >= 0
