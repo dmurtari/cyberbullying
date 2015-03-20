@@ -20,7 +20,7 @@ $( document ).ready(function() {
     console.log(question1)
     console.log(question2)
 
-    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + prev_button[0].dataset.id
+    window.location = "/survey/list/" + prev_button[0].dataset.id + "/" + question1 + "&" + question2 + "&prev" 
   })
 
   submit_button.on("click", function(event) {
@@ -30,6 +30,6 @@ $( document ).ready(function() {
     console.log(question1)
     console.log(question2)
 
-    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + submit_button[0].dataset.id
+    window.location = "/survey/list/" + submit_button[0].dataset.id + "/" + question1 + "&" + question2 + "&submit" 
   })
 })
