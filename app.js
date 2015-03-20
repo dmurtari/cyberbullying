@@ -29,31 +29,43 @@ app.get('/survey/list/:id/:q1?&:q2?&:button', function(req, res) {
     var q1 = req.params.q1
     var q2 = req.params.q2
     var id = req.params.id
+    var op = req.params.button
+    var length = app.data.survey.length
 
-    var post = _.find(results.survey_results, {'id': id})
-    console.log(id)
-    console.log(results.survey_results)
-    console.log(post)
+    if (!(q1 == "undefined" || q2 == "undefined")) {
+        var post = _.find(results.survey_results, {'id': id})
 
-    if (post) {
-        result_data = {
-            '1' : q1,
-            '2' : q2
+        if (post) {
+            result_data = {
+                '1' : q1,
+                '2' : q2
+            }
+            post['results'].push(result_data)
+
+        } else {
+            var result_data = {}
+            result_data['id'] = id
+            result_data['results'] = [{
+                '1' : q1,
+                '2' : q2
+            }]
+
+            results.survey_results.push(result_data)
         }
-        post['results'].push(result_data)
 
-    } else {
-        var result_data = {}
-        result_data['id'] = id
-        result_data['results'] = [{
-            '1' : q1,
-            '2' : q2
-        }]
-
-        results.survey_results.push(result_data)
+        fs.writeFileSync('./data/survey_results.json', JSON.stringify(results, null, 4));
     }
 
-    fs.writeFileSync('./data/survey_results.json', JSON.stringify(results, null, 4));
+    var id_num = Number(id)
+    if (op == "next") {
+        res.redirect('/survey/list/' + (id_num + 1))
+    } else if (op == "submit") {
+        res.redirect('/survey/list/' + id_num)
+    } else if (op == "prev") {
+        res.redirect('/survey/list/' + (id_num - 1))
+    }
+
+
 })
 
 // load routes for note, account, context

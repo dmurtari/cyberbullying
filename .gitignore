@@ -30,4 +30,4 @@ node_modules
 # vim swap file
 *.swp
 
-data/survery_results.json
+data/survey_results.json
