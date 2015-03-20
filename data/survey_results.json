@@ -1,21 +1,4 @@
 {
     "survey_results": [
-        {
-            "id": "true",
-            "results": [
-                {
-                    "2": "false&0"
-                },
-                {
-                    "2": "false&0"
-                },
-                {
-                    "2": "true&0"
-                },
-                {
-                    "2": "true&0"
-                }
-            ]
-        }
     ]
 }
