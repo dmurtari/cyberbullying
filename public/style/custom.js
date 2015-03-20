@@ -10,7 +10,7 @@ $( document ).ready(function() {
     console.log(question1)
     console.log(question2)
 
-    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + next_button[0].dataset.id
+    window.location = "/survey/list/" + next_button[0].dataset.id + "/" + question1 + "&" + question2 + "&next" 
   })
 
   prev_button.on("click", function(event) {
