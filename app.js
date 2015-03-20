@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
     res.render('index.jade')
 })
 
-app.get('/survey/list/:id/:q1?&:q2', function(req, res) {
+app.get('/survey/list/:id/:q1?&:q2?&:button', function(req, res) {
     var results = require('./data/survey_results.json')
     var q1 = req.params.q1
     var q2 = req.params.q2
