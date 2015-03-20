@@ -55,11 +55,11 @@ block content
         div.col-xs-1.col-md-1.button-div
           if prev_id >= 0
             button.btn.btn-primary(type="submit")
-              a.white-text(href="/survey/list/" + prev_id) Previous
+              a.white-text(id="prev-button" data-id=post.id href="#") Previous
         div.col-xs-2.col-md-2.col-xs-offset-4.col-xs-offset-4.button-div(type="submit")
           button.btn.btn-primary.btn-block(type="submit")
-            a.white-text(href="") Submit
+            a.white-text(id="submit-button" data-id=post.id href="#") Submit
         div.col-xs-1.col-md-1.col-xs-offset-4.col-xs-offset-4.button-div(type="submit")
           if next_id <= survey_length
-            button.btn.btn-primary
+            button.btn.btn-primary(type="submit")
               a.white-text(id="next-button" data-id=post.id href="#") Next
