@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   var next_button = $("#next-button")
-
-  console.log(next_button[0].dataset.id)
+  var prev_button = $("#prev-button")
+  var submit_button = $("#submit-button")
 
   next_button.on("click", function(event) {
     var question1 = $('input[name=question1]:checked').val()
@@ -10,6 +10,26 @@ $( document ).ready(function() {
     console.log(question1)
     console.log(question2)
 
-    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + next_button[0].dataset.id
+    window.location = "/survey/list/" + next_button[0].dataset.id + "/" + question1 + "&" + question2 + "&next" 
+  })
+
+  prev_button.on("click", function(event) {
+    var question1 = $('input[name=question1]:checked').val()
+    var question2 = $('input[name=question2]:checked').val()
+
+    console.log(question1)
+    console.log(question2)
+
+    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + prev_button[0].dataset.id
+  })
+
+  submit_button.on("click", function(event) {
+    var question1 = $('input[name=question1]:checked').val()
+    var question2 = $('input[name=question2]:checked').val()
+
+    console.log(question1)
+    console.log(question2)
+
+    window.location = "/survey/list/" + question1 + "&" + question2 + "&" + submit_button[0].dataset.id
   })
 })
