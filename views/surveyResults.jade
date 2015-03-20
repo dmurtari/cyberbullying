@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  div.panel.panel-default
+    div.panel-heading
+      h3= "Survey results"
+    div.panel-body
+      if results[0] == null
+            = "No results yet! Help collect data by "
+            a(href='/survey/list/')
+              = "taking the survey!"
+      else
+        table.table.table-striped
+          thead
+            tr
+              th= "Image"
+              th= "Q1"
+              th= "Q2"
+          tbody 
+            each result in results
+              - var agree1 = 0
+              - var agree2 = 0
+              - var disagree1 = 0
+              - var disagree2 = 0
+
+              each answer in result.results
+                if answer['1'] == "true"
+                  - agree1 += 1
+                else if answer['1'] == "false"
+                  - disagree1 += 1
+
+                if answer['2'] == "true"
+                  - agree2 += 1
+                else if answer['2'] == "false"
+                  - disagree2 += 1
+              tr
+                td
+                  a(href='/survey/list/' + result.id)
+                    img(src=images[result.id], width="100")
+                td
+                  div.btn-group(role="group")
+                    button.btn.btn-success(data-toggle="popover" title="Popover" data-content="Content")
+                      = "Agree: " + agree1
+                    button.btn.btn-danger
+                      = "Disagree: " + disagree1
+                td
+                  div.btn-group(role="group")
+                    button.btn.btn-success(data-toggle="popover" title="Popover" data-content="Content")
+                      = "Agree: " + agree2
+                    button.btn.btn-danger
+                      = "Disagree: " + disagree2
+

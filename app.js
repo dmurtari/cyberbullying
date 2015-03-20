@@ -8,6 +8,7 @@ var _ = require('lodash')
 app.data = {}
 app.data.survey = require('./data/cyberbullying_data.json').data
 app.data.questions = require('./data/survey_questions.json').data
+app.data.results = require('./data/survey_results.json').survey_results
 
 
 // use jade as the view engine
@@ -72,6 +73,7 @@ app.get('/survey/list/:id/:q1?&:q2?&:button', function(req, res) {
 require('./routes/about')(app)
 require('./routes/surveyList')(app)
 require('./routes/surveyQuestion')(app)
+require('./routes/surveyResults')(app)
 
 app.set('port', (process.env.PORT || 3000))
 
