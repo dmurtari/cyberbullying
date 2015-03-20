@@ -1,6 +1,7 @@
 var express = require('express')
 var fs = require('fs')
 var app = express()
+var paginate = require('express-paginate');
 
 var _ = require('lodash')
 
@@ -8,11 +9,15 @@ app.data = {}
 app.data.survey = require('./data/cyberbullying_data.json').data
 app.data.questions = require('./data/survey_questions.json').data
 
+
 // use jade as the view engine
 app.set('view engine', 'jade')
 
 // set where the static contents are (e.g., css, js)
 app.use(express.static(__dirname + '/public'))
+
+// set pagination
+app.use(paginate.middleware(10, 50));
 
 // default to index
 app.get('/', function(req, res) {

@@ -45,11 +45,12 @@ block content
           - var question_number = 0
           each question in questions
             tr
-              td= question.question
-              td
-                input(type="radio" name="question" + question_number)
-              td
-                input(type="radio" name="question" + question_number)
+              div(id="questions" + question_number)
+                td= question.question
+                td
+                  input(type="radio" name="question" + question_number id="question" + question_number value="yes")
+                td
+                  input(type="radio" name="question" + question_number id="question" + question_number vaue="no")
             - question_number += 1
         div.col-xs-1.col-md-1.button-div
           if prev_id >= 0
@@ -61,4 +62,4 @@ block content
         div.col-xs-1.col-md-1.col-xs-offset-4.col-xs-offset-4.button-div(type="submit")
           if next_id <= survey_length
             button.btn.btn-primary
-              a.white-text(href="/survey/list/" + next_id) Next
+              a.white-text(id="next-button" data-id=post.id href="#") Next
