@@ -14,6 +14,6 @@ You can view the site locally at
 
 The skeleton site is hosted publicly at 
 
-[http://cyberbullyingsurvey.herokuapp.com/](http://cyberbullyingsurvey.herokuapp.com/note/list)
+[http://cyberbullyingsurvey.herokuapp.com/](http://cyberbullyingsurvey.herokuapp.com/)
 
 
