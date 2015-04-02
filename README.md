@@ -1,4 +1,4 @@
-    # nn-express
+    # Cyberbullying
 
 # Install
 
@@ -14,6 +14,6 @@ You can view the site locally at
 
 The skeleton site is hosted publicly at 
 
-[https://frozen-tor-4197.herokuapp.com/](https://frozen-tor-4197.herokuapp.com/note/list)
+[http://cyberbullyingsurvey.herokuapp.com/](http://cyberbullyingsurvey.herokuapp.com/note/list)
 
 
